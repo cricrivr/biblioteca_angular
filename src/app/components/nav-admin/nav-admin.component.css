@@ -1,0 +1,47 @@
+.sidebar {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+    padding: 10px 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #639;
+
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #333;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      left: -100%;
+    }
+    
+    .sidebar.active {
+      left: 0;
+    }
+    
+    .sidebar ul li {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  
+  
